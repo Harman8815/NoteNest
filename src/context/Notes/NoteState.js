@@ -121,6 +121,7 @@ const NoteState = (props) => {
     };
 
     const updateNotes = (id, title, description, tag) => {
+        console.log(id, title,description, tag);
         const noteedit = notes.find((note) => note._id === id);
         if (noteedit) {
             editNotes(id, title, description, tag);
